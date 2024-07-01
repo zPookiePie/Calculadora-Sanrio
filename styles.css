@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgba(252, 67, 169, 0.603), rgba(181, 240, 250, 0.568));
+    height: 100vh;
+}
+
+.calculator {
+    background-color: rgba(166, 225, 252, 0.952);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding:18px;
+    color: #d39571;
+    box-shadow: 5px 5px 10px #bbbbbbd3;
+}
+
+#titulo {
+    display: inline-block; 
+}
+
+@media screen and (max-width: 600px) {
+    #titulo {
+        font-size: 26px;
+    }
+
+    .toggle-color-button {
+        height: 16px;
+        width: 23.025px;
+    }
+} 
+
+.toggle-color-button {
+    width: 46.05px;
+    height: 32px;
+    background-image: url('Cinnamoroll2.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+}
+
+#result {
+    background-color: white;
+    width: 10.1em;
+    height: 1.4em;
+    margin: 5px;
+    font-size: 22px;
+    text-align: right;
+    color: #fc6ec1;
+    overflow: hidden;
+}
+
+.botao {
+    height: 3.125em;
+    width: 3.125em;
+    border-radius: 50%;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(41, 127, 255);
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3px;
+}
+
+.botao:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.botao:active {
+    background-color: rgb(216, 216, 216);
+}
+
+.botao2 {
+    border-radius: 10px;
+    height: 3.125em;
+    width: 3.125em;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 190, 221);
+    color: rgb(41, 127, 255);
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3px;
+}
+
+.botao2:hover {
+    background-color: rgb(253, 206, 227);
+}
+
+.botao2:active {
+    background-color: rgb(253, 154, 200);
+}
+
+.botao0 {
+    background-color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.botao0:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.botao0:active {
+    background-color: rgb(216, 216, 216);
+}
+
+.star-container {
+    width: 4em;
+    height: 4em;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.star-container:hover .star {
+    fill:rgb(255, 211, 231);
+    stroke: rgb(255, 211, 231);
+}
+
+.star-container:active .star {
+    fill: rgb(253, 154, 200);
+    stroke: rgb(253, 154, 200);
+}
+
+.star {
+    fill: rgb(255, 190, 221);
+    stroke: rgb(255, 190, 221);
+    stroke-width: 5;
+    stroke-linejoin: round;
+}
+
+.star-number {
+    position: absolute;
+    font-size: 1em;
+    color: rgb(32, 120, 252);
+    font-weight: 900;
+}
+
+.heart-container {
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.heart-container:hover .heart {
+    fill: rgb(255, 254, 176);
+    stroke: rgb(255, 254, 176);
+}
+
+.heart-container:active .heart {
+    fill: rgb(255, 253, 122);
+    stroke: rgb(255, 253, 122);
+}
+
+.heart {
+    fill: rgb(255, 253, 134);
+    stroke: rgb(255, 253, 134);
+    stroke-width: 5;
+    stroke-linejoin: round;
+}
+
+.heart-number {
+    position: absolute;
+    font-size: 1em;
+    color: rgb(41, 127, 255);
+    font-weight: 900;
+}
+
+.new-color-scheme .toggle-color-button {
+    background-image:  url(image);
+}
+
+.new-color-scheme .calculator {
+    background-color: rgba(73, 73, 73, 0.952);
+    color: #fdd4e4;
+    box-shadow: 5px 5px 10px #2b2b2bd3;
+}
+
+.new-color-scheme #result {
+    color: #b11fd6;
+}
+
+.new-color-scheme .botao {
+    background-color: rgb(255, 190, 221);
+    color: white;
+}
+
+.new-color-scheme .botao:hover {
+    background-color: rgb(240, 143, 190);
+}
+
+.new-color-scheme .botao:active {
+    background-color: rgb(224, 97, 159);
+}
+
+.new-color-scheme .botao2 {
+    background-color: rgb(213, 142, 255);
+    color: white;
+}
+
+.new-color-scheme .botao2:hover {
+    background-color:  rgb(228, 181, 255);
+}
+
+.new-color-scheme .botao2:active {
+    background-color:  rgb(202, 110, 255);
+}
+
+.new-color-scheme .botao0 {
+    background-color: rgb(255, 190, 221);
+}
+
+.new-color-scheme .botao0:hover {
+    background-color: rgb(240, 143, 190);
+}
+
+.new-color-scheme .botao0:active {
+    background-color: rgb(224, 97, 159);
+}
+
+.new-color-scheme .star-container .star {
+    fill: rgb(213, 142, 255);
+    stroke: rgb(213, 142, 255);
+    color: white;
+}
+
+.new-color-scheme .star-container:hover .star {
+    fill: rgb(228, 181, 255);
+    stroke: rgb(228, 181, 255);
+}
+
+.new-color-scheme .star-container:active .star{
+    fill: rgb(202, 110, 255);
+    stroke: rgb(202, 110, 255);
+}
+
+.new-color-scheme .heart-container .heart {
+    fill: rgb(255, 125, 125);
+    stroke:rgb(255, 125, 125);
+}
+
+.new-color-scheme .heart-container:hover .heart {
+    fill: rgb(255, 157, 157);
+    stroke:rgb(255, 157, 157);
+}
+
+.new-color-scheme .heart-container:active .heart {
+    fill: rgb(253, 91, 91);
+    stroke: rgb(253, 91, 91);
+}
+
+.new-color-scheme .star-number,
+.new-color-scheme .heart-number {
+    color: white;
+}
+
+.toggle-color-button, .calculator, #result, .botao, .botao2, .star-container, .heart-container, .star, .heart {
+    transition: background-color 0.7s ease, color 0.7s ease, fill 0.7s ease, stroke 0.7s ease;
+}
